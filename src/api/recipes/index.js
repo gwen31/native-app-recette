@@ -11,12 +11,15 @@ const MAX_PER_PAGE = 30;
 //requetes Axios, pour recupérer la liste des recettes
 export const fetchRecipes = async (query) => {
     try {
+        console.log('Dans fetch recipes');
         const response = await axios.get(ENDPOINT_RECIPES, {
             params: {
                 apiKey,
                 number: MAX_PER_PAGE
             },
         });
+        console.log('La reponse =', response.data.results);
+        
         const dispatch = useDispatch();
             dispatch(fetchRecipesAction(response.data.results)) //results c'est ce que l'on recupère dans l'API
             
