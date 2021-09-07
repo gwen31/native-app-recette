@@ -5,7 +5,9 @@ const RecipesDetailsScreen = ({navigation}) => {
     return (
         <View style={styles.container}>
             <Text>RecipesDetailsScreen</Text>
-            <Button title="Revenir" onPress={()=> { 
+            <Button 
+                title="Revenir" 
+                onPress={()=> { 
                 navigation.goBack();
             }} />
         </View>
