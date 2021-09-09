@@ -1,13 +1,14 @@
 import axios from 'axios';
 
-import {fetchRecipesAction} from '../../redux/action';
+import {fetchRecipesAction, fetchSelectedRecipeAction} from '../../redux/action';
 
-//Variables adresse API, ma key de l'API, et nombre par page
-const ENDPOINT_RECIPES = "https://api.spoonacular.com/recipes/complexSearch";
+const ENDPOINT_BASE = "https://api.spoonacular.com/recipes";
+const ENDPOINT_RECIPES = ENDPOINT_BASE + "/complexSearch";
 const apiKey = "5b0cd9ef88d141388461f9b2d71b7ca8";
 const MAX_PER_PAGE = 30;
 
 //requetes Axios, pour recupérer la liste des recettes
+
 export const fetchRecipes = async (dispatch, query) => {
     try {
         const response = await axios.get(ENDPOINT_RECIPES, {
@@ -22,4 +23,21 @@ export const fetchRecipes = async (dispatch, query) => {
             console.log('error requete recipes', e);
         }
 };
+//requetes Axios, pour recupérer les informations d'une recette
 
+export const fetchSelectedRecipe = async (dispatch, recipeId) => {
+    try {
+        console.log('Dans fetch selected recipe')
+
+        const response = await axios.get(ENDPOINT_BASE + "/" + recipeId + "/information", {
+            params: {
+                apiKey
+            }
+        })
+        console.log('response = ', response.data)
+        
+        dispatch(fetchSelectedRecipeAction(response.data)) 
+    } catch(e) {
+            console.log('error', e)
+        }
+    }
