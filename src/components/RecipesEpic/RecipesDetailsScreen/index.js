@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import { View, Text, StyleSheet, Image } from 'react-native';
+import { View, Text, StyleSheet, Image, ScrollView } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { getSelectedRecipe } from "../../../redux/selectors";
@@ -15,7 +15,7 @@ const RecipesDetailsScreen = ({route, navigation}) => {
     },[])
 
     return (
-        <View>
+        <ScrollView>
             <View style={styles.containerImage}>
                 <Image 
                     source={{uri: recipe.image}} 
@@ -27,11 +27,11 @@ const RecipesDetailsScreen = ({route, navigation}) => {
                 <Text style={styles.title}>{recipe.title}</Text>
             </View>
             <View style={styles.containerIngredients}>
-               {recipe.extendedIngredients.map(ing => {
-                   return <Text style={styles.ing}>{ing.original}</Text>
-               })}
+                {recipe.extendedIngredients.map((ing)=> {
+                    return <Text style={styles.ing}>{ing.original}</Text>
+                })}
             </View>
-        </View>
+        </ScrollView>
     );
 };
 
