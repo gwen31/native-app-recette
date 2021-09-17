@@ -30,7 +30,7 @@ Nous arrivons sur la liste de recette (appel à l'API) et lorsque nous cliquons 
 
 ## Conclusion
 
-Pour cloner le repo git clone https://github.com/gwen31/native-app-recette
+* Pour cloner le repo git clone https://github.com/gwen31/native-app-recette
 
 * pour lancer le projet:
 
