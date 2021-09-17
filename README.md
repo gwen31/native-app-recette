@@ -18,6 +18,7 @@ Cette application à aussi une simple todolist.
 ### Page todolist
 
 Nous pouvons ajouter et suprimer des tâches mais également cocher si une tâche a été effectué.
+Il y a aussi un compteur qui affiche le nombre de tâche créé et le nombre de tâche validé.
 
 ![image1](/assets/image1.png) ![image2](/assets/image2.png) ![image2](/assets/image3.png) 
 
