@@ -27,7 +27,7 @@ const RecipesDetailsScreen = ({route, navigation}) => {
                 <Text style={styles.title}>{recipe.title}</Text>
             </View>
             <View style={styles.containerIngredients}>
-                {recipe.extendedIngredients.map((ing)=> {
+            {recipe.extendedIngredients.map((ing)=> {
                     return <Text style={styles.ing}>{ing.original}</Text>
                 })}
             </View>

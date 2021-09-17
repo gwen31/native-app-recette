@@ -6,4 +6,5 @@ import { selectedRecipe } from './selectedRecipe';
 export default combineReducers({
     recipesList,
     selectedRecipe,
+  
 });
