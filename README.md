@@ -17,7 +17,8 @@ Cette application à aussi une simple todolist.
 
 ### Page todolist
 
-[capture d'écran](https://ibb.co/285MW1S)
+[capture d'écran](https://i.ibb.co/tZ32QTz/Capture-d-cran-du-2021-09-17-09-55-17.png)
+[url=https://imgbb.com/][img]https://i.ibb.co/tZ32QTz/Capture-d-cran-du-2021-09-17-09-55-17.png[/img][/url]
 
 
 
