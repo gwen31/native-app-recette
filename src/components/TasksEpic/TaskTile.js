@@ -10,8 +10,8 @@ const TaskTile = ({ id, title, completed, onChangeStatus, onDeleteTask }) => {
             style={styles.icon}
             source={
               completed
-                ? require("../../../assets/icon_check.png")
-                : require("../../../assets/icon_circle.png")
+                ? require("../../../assets/icon_circle.png")
+                : require("../../../assets/icon_check.png")
             }
           />
           <Text

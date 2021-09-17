@@ -17,7 +17,20 @@ Cette application à aussi une simple todolist.
 
 ### Page todolist
 
-![image1](/assets/image1.png) ![image1](/assets/image2.png) ![image1](/assets/image3.png) 
+Nous pouvons ajouter et suprimer des tâches mais également cocher si une tâche a été effectué.
+
+![image1](/assets/image1.png) ![image2](/assets/image2.png) ![image2](/assets/image3.png) 
 
 
+### Page liste de recette et detail d'une recette
 
+Nous arrivons sur la liste de recette (appel à l'API) et lorsque nous cliquons sur une recette, nous aurons le détail de la recette (ingrédients).
+
+![image1](/assets/recette1.png) ![image2](/assets/recette2.png)
+
+## Conclusion
+
+Pour cloner le repo git clone https://github.com/gwen31/native-app-recette
+pour lancer le projet:
+
+    il faut installer **expo** et utiliser la commande **expo start** ou **npm start**
